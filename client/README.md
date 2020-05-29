@@ -39,5 +39,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 * [Vuetifyjs](https://vuetifyjs.com/)
 * [Vue](https://vuejs.org/index.html/)
-* [ECharts](http://echarts.baidu.com/option.html)
 * [Stylus](http://stylus-lang.com/)
