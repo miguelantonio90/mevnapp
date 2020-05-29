@@ -1,0 +1,15 @@
+{
+  "home": "Home",
+  "login": {
+    "title": "Welcomes",
+    "account": "Email",
+    "password": "Password",
+    "submit": "LOGIN"
+  },
+  "toobar": {
+    "search": "Search",
+    "profile": "Profile",
+    "settings": "Settings",
+    "logout": "Logout"
+  }
+}
