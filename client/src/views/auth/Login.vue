@@ -1,5 +1,6 @@
 <template>
   <v-card class="elevation-1 pa-3 login-card">
+    <register :dialog="showRegister"></register>
     <v-card-text>
       <div class="layout column align-center">
         <img src="/static/m.png" alt="Vue Material Admin" width="120" height="120" />
@@ -34,19 +35,31 @@
         <v-icon color="light-blue">fa fa-twitter fa-lg</v-icon>
       </v-btn>
       <v-spacer></v-spacer>
-      <v-btn block color="primary" @click="login" :loading="loading">{{ $t("login.submit") }}</v-btn>
+      <v-card-actions>
+        <div class="flex-grow-1"></div>
+        <v-btn block color="primary" :loading="loading" @click="login">{{ $t("login.submit") }}</v-btn>
+        <v-btn  @click.stop="toogleRegisterModal(true)">{{ $t("login.register") }}</v-btn>
+      </v-card-actions>
     </div>
   </v-card>
 </template>
 
 <script>
 import { mapActions, mapState } from "vuex"
+import Register from "../../components/users/Register"
+
 export default {
+  components: { Register },
+  data: () => ({
+    dialog: false
+  }),
   computed: {
-    ...mapState("login", ["user", "loading", "loggedIn", "request"])
+    ...mapState("login", ["user", "loading", "loggedIn", "request"]),
+    ...mapState("user", ["showRegister"])
   },
   methods: {
-    ...mapActions("login", ["login"])
+    ...mapActions("login", ["login"]),
+    ...mapActions("user", ["toogleRegisterModal"])
   }
 }
 </script>

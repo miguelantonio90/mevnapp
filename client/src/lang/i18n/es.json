@@ -4,7 +4,8 @@
     "title": "Bienvenido",
     "account": "Correo",
     "password": "Contraseña",
-    "submit": "ACEPTAR"
+    "submit": "ACEPTAR",
+    "register": "REGISTRAR"
   },
   "toobar": {
     "search": "Buscar",

@@ -4,12 +4,16 @@
     "title": "Welcomes",
     "account": "Email",
     "password": "Password",
-    "submit": "LOGIN"
+    "submit": "LOGIN",
+    "register": "REGISTER"
   },
   "toobar": {
     "search": "Search",
     "profile": "Profile",
     "settings": "Settings",
     "logout": "Logout"
+  },
+  "user": {
+    "name": "Full Name"
   }
 }
